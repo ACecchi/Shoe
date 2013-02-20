@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="7" height="10" tilewidth="64" tileheight="64">
+ <properties>
+  <property name="Music" value=""/>
+ </properties>
+ <tileset firstgid="1" name="Items" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/Items.png" width="128" height="260"/>
+ </tileset>
+ <tileset firstgid="9" name="TileSheetRevised" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/TileSheetRevised.png" width="640" height="640"/>
+ </tileset>
+ <layer name="Ground" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxTYmBgUELCokgYnT8c5XD5HQCrWQaP
+  </data>
+ </layer>
+ <layer name="Detail" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAFSkgYFxiscrIUmonsdwD+nAH6
+  </data>
+ </layer>
+ <layer name="Overlay" width="7" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxTYmBgUMKD1YFYAwlrIskZMqACYxrKMVBgpjUQ2yBhWwJ+BmEAY5wIJw==
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="7" height="10">
+  <object name="ForthCavePortal" type="Portal" x="131" y="461" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\ForthCave"/>
+    <property name="DestinationTileLocation" value="5,2"/>
+   </properties>
+  </object>
+  <object name="PlayerStart" type="PlayerStart" x="241" y="145" width="61" height="56"/>
+ </objectgroup>
+ <layer name="Items" width="7" height="10" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAdYEaj0QE7AXFC8rgAGwF5YgAAFQAAKQ==
+  </data>
+ </layer>
+ <layer name="Clip" width="7" height="10" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJwTYGBgEMCDsYHhJIcLAwALZwHh
+  </data>
+ </layer>
+ <layer name="AmmoClip" width="7" height="10" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJwTYGBgEMCDsYHhJIcLAwALZwHh
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,80 @@
+Content\Textures\Characters\Bandit2Walk.xnb
+Content\Textures\Characters\bullet.xnb
+Content\Textures\Characters\Chest.xnb
+Content\Textures\Characters\ChestOpen.xnb
+Content\Textures\Characters\Dynamite.xnb
+Content\Textures\Characters\explosion.xnb
+Content\Textures\Characters\Goblin1WalkLeft.xnb
+Content\Textures\Characters\Shoe1Walk.xnb
+Content\Textures\Characters\Shoe1WalkLeft.xnb
+Content\Textures\Characters\Villian1Walk.xnb
+Content\Textures\Characters\Zombie1WalkLeft.xnb
+Content\HUD\lowerHud.xnb
+Content\HUD\upperHud.xnb
+Content\HUD\Weapons\largeDynamite.xnb
+Content\HUD\Weapons\largePistol.xnb
+Content\HUD\Weapons\largeShotgun.xnb
+Content\HUD\Weapons\smallDynamite.xnb
+Content\HUD\Weapons\smallPistol.xnb
+Content\HUD\Weapons\smallShotgun.xnb
+Content\Textures\Items\Armor.xnb
+Content\Textures\Items\Chest.xnb
+Content\Textures\Items\Dynamite.xnb
+Content\Textures\Items\Experience.xnb
+Content\Textures\Items\HealthPickup.xnb
+Content\Textures\Items\Invincibility.xnb
+Content\Textures\Items\PistolAmmo.xnb
+Content\Textures\Items\ShotgunAmmo.xnb
+Content\Textures\Items\UnlimitedAmmo.xnb
+Content\Textures\Alpha.xnb
+Content\Textures\background.xnb
+Content\Textures\Background001.xnb
+Content\Textures\blank.xnb
+Content\Textures\gradient.xnb
+Content\Textures\Demo.xnb
+Content\Fonts\DefaultFont.xnb
+Content\Fonts\gamefont.xnb
+Content\Fonts\hudFont.xnb
+Content\Fonts\menufont.xnb
+Content\Maps\Arena.xnb
+Content\Maps\BanditCamp.xnb
+Content\Maps\BossRoom.xnb
+Content\Maps\FirstArea.xnb
+Content\Maps\FirstCave.xnb
+Content\Maps\FirstDesert.xnb
+Content\Maps\FirstVolcano.xnb
+Content\Maps\ForthCave.xnb
+Content\Maps\RiverArea.xnb
+Content\Maps\SecondCave.xnb
+Content\Maps\SecondDesert.xnb
+Content\Maps\ThirdCave.xnb
+Content\Sounds\44 Magnum-SoundBible.com-162460153.xnb
+Content\Sounds\Armor.xnb
+Content\Sounds\Dynamite.xnb
+Content\Sounds\DynamiteAmmo.xnb
+Content\Sounds\enemyDamaged.xnb
+Content\Sounds\enemyDeath.xnb
+Content\Sounds\Experience.xnb
+Content\Sounds\healthPickup.xnb
+Content\Sounds\invincibility.xnb
+Content\Sounds\level up sound.xnb
+Content\Sounds\PistolAmmo.xnb
+Content\Sounds\pistol_heavy.xnb
+Content\Sounds\Power Up 1.xnb
+Content\Sounds\ShoeDeath.xnb
+Content\Sounds\ShoeHit.xnb
+Content\Sounds\shotgun.xnb
+Content\Sounds\shotgunAmmo.xnb
+Content\Sounds\UnlimitedAmmo.xnb
+Content\Sounds\background sounds.xnb
+Content\Sounds\Gameplay Beat.xnb
+Content\Sounds\Los Desastres - Pension Adelaide.xnb
+Content\Sounds\Main Title_Peter Boss - Horse Race.xnb
+Content\Sounds\Remote Locations in Ontario - Midnight Wanderer.xnb
+Content\Maps\Tilesheets\Items.xnb
+Content\Maps\Tilesheets\TileSheetRevised.xnb
+Content\Sounds\background sounds.wma
+Content\Sounds\Gameplay Beat.wma
+Content\Sounds\Los Desastres - Pension Adelaide.wma
+Content\Sounds\Main Title_Peter Boss - Horse Race.wma
+Content\Sounds\Remote Locations in Ontario - Midnight Wanderer.wma

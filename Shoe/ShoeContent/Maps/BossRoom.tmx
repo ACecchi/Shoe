@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="15" height="50" tilewidth="64" tileheight="64">
+ <properties>
+  <property name="Music" value=""/>
+ </properties>
+ <tileset firstgid="1" name="Items" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/Items.png" width="128" height="260"/>
+ </tileset>
+ <tileset firstgid="9" name="TileSheetRevised" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/TileSheetRevised.png" width="640" height="640"/>
+ </tileset>
+ <layer name="Ground" width="15" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztw0ENAAAMA6ETUf9aZ2MPSFg1VVX19QPnoTqZ
+  </data>
+ </layer>
+ <layer name="Detail" width="15" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztlDsOwCAMQ1mRuEPvf8uuHfLxCxFi6MBQiZc4NukcY8yN8xTOz/azSkZeHeu+wnraVFaZ1+rRxdI+lFVyoLtk1dll6a7TvpaGLpbqV/ZBzZzoVfKP8iF6uljqg/eWVQ+z/aVspIH0IbW8ex1sNG+FzfZc8ZnoIyyZt8KS/0bmCfXgFvaEz5SlWZC+qlen2PX5XvC8/8RFJg==
+  </data>
+ </layer>
+ <layer name="Overlay" width="15" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20ND6AAAIB3Awu4AAE=
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="15" height="50">
+  <object name="BanditCamp" type="Portal" x="57" y="3134" width="136" height="62">
+   <properties>
+    <property name="DestinationMap" value="Maps\BanditCamp"/>
+    <property name="DestinationTileLocation" value="1,4"/>
+   </properties>
+  </object>
+  <object name="ReturnPortal" type="Portal" x="825" y="66" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\FirstArea"/>
+    <property name="DestinationTileLocation" value="8,6"/>
+   </properties>
+  </object>
+  <object name="Boss" type="Boss" x="466" y="137" width="68" height="64"/>
+  <object name="PlayerStart" type="PlayerStart" x="684" y="3055" width="61" height="56"/>
+ </objectgroup>
+ <layer name="Items" width="15" height="50" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2DgASuNzWehsfmjYBSMJDCan0YBPQDbQDtghABa17+jgLoAAI3oABk=
+  </data>
+ </layer>
+ <layer name="Clip" width="15" height="50" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztlFEKwDAIQz1C73/a/RdN86aMfmwwGNRnQl1cEbEa75vnZ+dZZ0ZVn6zeYStvLqu8KI0plupQ1pkDzVLWp8vSrFPdzMMUS/07ecg0O6w7fzUf4meKjUNN9k0zt9epXFFWeSA6pFdVN8Hu5132lPOsl7ur1E50WKdfhyV743QnysvN7Bf3TFk6C6JbebmBpf/jAytrD+E=
+  </data>
+ </layer>
+ <layer name="AmmoClip" width="15" height="50" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJwTYGBgEKAAkwNG9Y7qHdWLqpcc/QJo9Khe3Poo0YuNTYpecuJ3MOglFYzWC6N6R/WO6h3VS7peUtvdAKZICCE=
+  </data>
+ </layer>
+</map>

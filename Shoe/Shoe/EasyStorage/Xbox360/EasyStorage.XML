@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EasyStorage</name>
+    </assembly>
+    <members>
+        <member name="T:EasyStorage.SaveDeviceEventResponse">
+            <summary>
+            Responses for a user canceling the StorageDevice selector
+            or disconnecting the StorageDevice.
+            </summary>
+        </member>
+        <member name="F:EasyStorage.SaveDeviceEventResponse.Nothing">
+            <summary>
+            Take no action.
+            </summary>
+        </member>
+        <member name="F:EasyStorage.SaveDeviceEventResponse.Prompt">
+            <summary>
+            Displays a message box to choose whether to select a new 
+            device and shows the selector if appropriate.
+            </summary>
+        </member>
+        <member name="F:EasyStorage.SaveDeviceEventResponse.Force">
+            <summary>
+            Displays a message that the user must choose a new device
+            and shows the device selector.
+            </summary>
+        </member>
+        <member name="T:EasyStorage.SaveDevicePromptEventArgs">
+            <summary>
+            Event arguments for the SaveDevice after a MessageBox prompt
+            has been closed.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDevicePromptEventArgs.ShowDeviceSelector">
+            <summary>
+            Gets whether or not the user has chosen to select a new
+            StorageDevice.
+            </summary>
+        </member>
+        <member name="T:EasyStorage.SaveDeviceEventArgs">
+            <summary>
+            Event arguments for the SaveDevice class.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDeviceEventArgs.Response">
+            <summary>
+            Gets or sets the response to the event. The default response is to prompt.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDeviceEventArgs.PlayerToPrompt">
+            <summary>
+            Gets or sets the player index of the controller for which the message
+            boxes should appear. This does not change the actual selection of the
+            device but is merely used for the message box displays. Set to null
+            to allow any player to handle the message box.
+            </summary>
+        </member>
+        <member name="T:EasyStorage.Language">
+            <summary>
+            The languages supported by EasyStorage.
+            </summary>
+        </member>
+        <member name="T:EasyStorage.EasyStorageSettings">
+            <summary>
+            Used to access settings for EasyStorage.
+            </summary>
+        </member>
+        <member name="M:EasyStorage.EasyStorageSettings.SetSupportedLanguages(EasyStorage.Language[])">
+            <summary>
+            Restricts the EasyStorage system to the specified languages. If the system is currently
+            set to a language not listed here, EasyStorage will use the first language given. This
+            method does reset the SaveDevice strings, so it's best to call this before setting
+            your strings explicitly.
+            </summary>
+            <param name="supportedLanguages">The set of supported languages.</param>
+        </member>
+        <member name="M:EasyStorage.EasyStorageSettings.ResetSaveDeviceStrings">
+            <summary>
+            Resets the SaveDevice strings to their default values.
+            </summary>
+        </member>
+        <member name="T:EasyStorage.SaveDevice">
+            <summary>
+            A base class for an object that maintains a StorageDevice.
+            </summary>
+            <remarks>
+            We implement the three interfaces rather than deriving from GameComponent
+            just to simplify our constructor and remove the need to pass the Game to
+            it.
+            </remarks>
+        </member>
+        <member name="T:EasyStorage.ISaveDevice">
+            <summary>
+            Defines the interface for an object that can perform file operations.
+            </summary>
+        </member>
+        <member name="M:EasyStorage.ISaveDevice.Save(System.String,EasyStorage.FileAction)">
+            <summary>
+            Saves a file.
+            </summary>
+            <param name="fileName">The file to save.</param>
+            <param name="saveAction">The save action to perform.</param>
+            <returns>True if the save completed without errors, false otherwise.</returns>
+        </member>
+        <member name="M:EasyStorage.ISaveDevice.Load(System.String,EasyStorage.FileAction)">
+            <summary>
+            Loads a file.
+            </summary>
+            <param name="fileName">The file to load.</param>
+            <param name="loadAction">The load action to perform.</param>
+            <returns>True if the load completed without error, false otherwise.</returns>
+        </member>
+        <member name="M:EasyStorage.ISaveDevice.Delete(System.String)">
+            <summary>
+            Deletes a file.
+            </summary>
+            <param name="fileName">The file to delete.</param>
+            <returns>True if the file either doesn't exist or was deleted succesfully, false if the file exists but failed to be deleted.</returns>
+        </member>
+        <member name="M:EasyStorage.ISaveDevice.FileExists(System.String)">
+            <summary>
+            Determines if a given file exists.
+            </summary>
+            <param name="fileName">The name of the file.</param>
+            <returns>True if the file exists, false otherwise.</returns>
+        </member>
+        <member name="M:EasyStorage.ISaveDevice.GetFiles">
+            <summary>
+            Gets an array of all files available in the SaveDevice.
+            </summary>
+            <returns>An array of file names of the files in the SaveDevice.</returns>
+        </member>
+        <member name="M:EasyStorage.ISaveDevice.GetFiles(System.String)">
+            <summary>
+            Gets an array of all files available in the SaveDevice.
+            </summary>
+            <param name="directory">A subdirectory to search in the SaveDevice.</param>
+            <returns>An array of file names of the files in the SaveDevice.</returns>
+        </member>
+        <member name="M:EasyStorage.ISaveDevice.GetFiles(System.String,System.String)">
+            <summary>
+            Gets an array of all files available in the SaveDevice.
+            </summary>
+            <param name="directory">A subdirectory to search in the SaveDevice.</param>
+            <param name="pattern">A search pattern to use to find files.</param>
+            <returns>An array of file names of the files in the SaveDevice.</returns>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.#ctor(System.String)">
+            <summary>
+            Creates a new SaveDevice.
+            </summary>
+            <param name="storageContainerName">The name to use when opening a StorageContainer.</param>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.Initialize">
+            <summary>
+            Allows the SaveDevice to initialize itself.
+            </summary>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.PromptForDevice">
+            <summary>
+            Flags the SaveDevice to prompt for a storage device on the next Update.
+            </summary>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.Save(System.String,EasyStorage.FileAction)">
+            <summary>
+            Saves a file.
+            </summary>
+            <param name="fileName">The file to save.</param>
+            <param name="saveAction">The save action to perform.</param>
+            <returns>True if the save completed without errors, false otherwise.</returns>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.Load(System.String,EasyStorage.FileAction)">
+            <summary>
+            Loads a file.
+            </summary>
+            <param name="fileName">The file to load.</param>
+            <param name="loadAction">The load action to perform.</param>
+            <returns>True if the load completed without error, false otherwise.</returns>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.Delete(System.String)">
+            <summary>
+            Deletes a file.
+            </summary>
+            <param name="fileName">The file to delete.</param>
+            <returns>True if the file either doesn't exist or was deleted succesfully, false if the file exists but failed to be deleted.</returns>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.GetFiles">
+            <summary>
+            Gets an array of all files available in the SaveDevice.
+            </summary>
+            <returns>An array of file names of the files in the SaveDevice.</returns>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.GetFiles(System.String)">
+            <summary>
+            Gets an array of all files available in the SaveDevice.
+            </summary>
+            <param name="directory">A subdirectory to search in the SaveDevice.</param>
+            <returns>An array of file names of the files in the SaveDevice.</returns>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.GetFiles(System.String,System.String)">
+            <summary>
+            Gets an array of all files available in the SaveDevice.
+            </summary>
+            <param name="directory">A subdirectory to search in the SaveDevice.</param>
+            <param name="pattern">A search pattern to use to find files.</param>
+            <returns>An array of file names of the files in the SaveDevice.</returns>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.FileExists(System.String)">
+            <summary>
+            Determines if a given file exists.
+            </summary>
+            <param name="fileName">The name of the file.</param>
+            <returns>True if the file exists, false otherwise.</returns>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.GetStorageDevice(System.AsyncCallback)">
+            <summary>
+            Derived classes should implement this method to call the Guide.BeginShowStorageDeviceSelector
+            method with the desired parameters, using the given callback.
+            </summary>
+            <param name="callback">The callback to pass to Guide.BeginShowStorageDeviceSelector.</param>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.PrepareEventArgs(EasyStorage.SaveDeviceEventArgs)">
+            <summary>
+            Prepares the SaveDeviceEventArgs to be used for an event.
+            </summary>
+            <param name="args">The event arguments to be configured.</param>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Allows the component to update itself.
+            </summary>
+            <param name="gameTime">The current game timestamp.</param>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.StorageDeviceSelectorCallback(System.IAsyncResult)">
+            <summary>
+            A callback for the BeginStorageDeviceSelectorPrompt.
+            </summary>
+            <param name="result">The result of the prompt.</param>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.ForcePromptCallback(System.IAsyncResult)">
+            <summary>
+            A callback for either of the message boxes telling users they
+            have to choose a storage device, either from cancelling the
+            device selector or disconnecting the device.
+            </summary>
+            <param name="result">The result of the prompt.</param>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.ReselectPromptCallback(System.IAsyncResult)">
+            <summary>
+            A callback for either of the message boxes asking the user
+            to select a new device, either from cancelling the device
+            seledctor or disconnecting the device.
+            </summary>
+            <param name="result">The result of the prompt.</param>
+        </member>
+        <member name="M:EasyStorage.SaveDevice.HandleEventArgResults">
+            <summary>
+            Handles reading from the eventArgs to determine what action to take.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDevice.PromptForCancelledMessage">
+            <summary>
+            Gets or sets the message displayed when the user is asked if they want
+            to select a storage device after cancelling the storage device selector.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDevice.ForceCancelledReselectionMessage">
+            <summary>
+            Gets or sets the message displayed when the user is told they must
+            select a storage device after cancelling the storage device selector.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDevice.PromptForDisconnectedMessage">
+            <summary>
+            Gets or sets the message displayed when the user is asked if they
+            want to select a new storage device after the storage device becomes
+            disconnected.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDevice.ForceDisconnectedReselectionMessage">
+            <summary>
+            Gets or sets the message displayed when the user is told they must
+            select a new storage device after the storage device becomes disconnected.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDevice.DeviceRequiredTitle">
+            <summary>
+            Gets or sets the title displayed when the user is required to choose
+            a storage device.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDevice.DeviceOptionalTitle">
+            <summary>
+            Gets or sets the title displayed when the user is asked if they want
+            to choose a storage device.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDevice.OkOption">
+            <summary>
+            Gets or sets the text used for the "Ok" button when the user is told
+            they must select a storage device.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDevice.YesOption">
+            <summary>
+            Gets or sets the text used for the "Yes" button when the user is asked
+            if they want to select a storage device.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDevice.NoOption">
+            <summary>
+            Gets or sets the text used for the "No" button when the user is asked
+            if they want to select a storage device.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDevice.StorageContainerName">
+            <summary>
+            Gets the name of the StorageContainer used by this SaveDevice.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDevice.HasValidStorageDevice">
+            <summary>
+            Gets whether the SaveDevice has a valid StorageDevice.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDevice.Enabled">
+            <summary>
+            Gets or sets a value indicating whether the SaveDevice is enabled for use.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.SaveDevice.UpdateOrder">
+            <summary>
+            Gets or sets the order in which the SaveDevice is updated
+            in the game. Components with a lower UpdateOrder are updated
+            first.
+            </summary>
+        </member>
+        <member name="E:EasyStorage.SaveDevice.DeviceSelected">
+            <summary>
+            Invoked when a StorageDevice is selected.
+            </summary>
+        </member>
+        <member name="E:EasyStorage.SaveDevice.DeviceSelectorCanceled">
+            <summary>
+            Invoked when a StorageDevice selector is canceled.
+            </summary>
+        </member>
+        <member name="E:EasyStorage.SaveDevice.DeviceReselectPromptClosed">
+            <summary>
+            Invoked when the user closes a prompt to reselect a StorageDevice.
+            </summary>
+        </member>
+        <member name="E:EasyStorage.SaveDevice.DeviceDisconnected">
+            <summary>
+            Invoked when the StorageDevice is disconnected.
+            </summary>
+        </member>
+        <member name="E:EasyStorage.SaveDevice.EnabledChanged">
+            <summary>
+            Fired when the Enabled property has been changed.
+            </summary>
+        </member>
+        <member name="E:EasyStorage.SaveDevice.UpdateOrderChanged">
+            <summary>
+            Fired when the UpdateOrder property has been changed.
+            </summary>
+        </member>
+        <member name="T:EasyStorage.SharedSaveDevice">
+            <summary>
+            A SaveDevice used for non player-specific saving of data.
+            </summary>
+        </member>
+        <member name="M:EasyStorage.SharedSaveDevice.#ctor(System.String)">
+            <summary>
+            Creates a new SharedSaveDevice.
+            </summary>
+            <param name="storageContainerName">The name to use when opening a StorageContainer.</param>
+        </member>
+        <member name="M:EasyStorage.SharedSaveDevice.GetStorageDevice(System.AsyncCallback)">
+            <summary>
+            Derived classes should implement this method to call the Guide.BeginShowStorageDeviceSelector
+            method with the desired parameters, using the given callback.
+            </summary>
+            <param name="callback">The callback to pass to Guide.BeginShowStorageDeviceSelector.</param>
+        </member>
+        <member name="T:EasyStorage.SaveDevicePromptState">
+            <summary>
+            The various states of the SaveDevice.
+            </summary>
+        </member>
+        <member name="F:EasyStorage.SaveDevicePromptState.None">
+            <summary>
+            The SaveDevice is doing nothing.
+            </summary>
+        </member>
+        <member name="F:EasyStorage.SaveDevicePromptState.ShowSelector">
+            <summary>
+            The SaveDevice needs to show the StorageDevice selector.
+            </summary>
+        </member>
+        <member name="F:EasyStorage.SaveDevicePromptState.PromptForCanceled">
+            <summary>
+            The SaveDevice needs to prompt the user because a 
+            StorageDevice selector was canceled.
+            </summary>
+        </member>
+        <member name="F:EasyStorage.SaveDevicePromptState.ForceCanceledReselection">
+            <summary>
+            The SaveDevice needs to force the user to choose a
+            StorageDevice because a StorageDevice selector was canceled.
+            </summary>
+        </member>
+        <member name="F:EasyStorage.SaveDevicePromptState.PromptForDisconnected">
+            <summary>
+            The SaveDevice needs to prompt the user because a 
+            StorageDevice was disconnected.
+            </summary>
+        </member>
+        <member name="F:EasyStorage.SaveDevicePromptState.ForceDisconnectedReselection">
+            <summary>
+            The SaveDevice needs to force the user to choose a
+            StorageDevice because a StorageDevice was disconnected.
+            </summary>
+        </member>
+        <member name="T:EasyStorage.PlayerSaveDevice">
+            <summary>
+            A SaveDevice used for saving player-specific data.
+            </summary>
+        </member>
+        <member name="M:EasyStorage.PlayerSaveDevice.#ctor(System.String,Microsoft.Xna.Framework.PlayerIndex)">
+            <summary>
+            Creates a new PlayerSaveDevice for a given player.
+            </summary>
+            <param name="storageContainerName">The name to use when opening a StorageContainer.</param>
+            <param name="player">The player for which the data will be saved.</param>
+        </member>
+        <member name="M:EasyStorage.PlayerSaveDevice.GetStorageDevice(System.AsyncCallback)">
+            <summary>
+            Derived classes should implement this method to call the Guide.BeginShowStorageDeviceSelector
+            method with the desired parameters, using the given callback.
+            </summary>
+            <param name="callback">The callback to pass to Guide.BeginShowStorageDeviceSelector.</param>
+        </member>
+        <member name="M:EasyStorage.PlayerSaveDevice.PrepareEventArgs(EasyStorage.SaveDeviceEventArgs)">
+            <summary>
+            Prepares the SaveDeviceEventArgs to be used for an event.
+            </summary>
+            <param name="args">The event arguments to be configured.</param>
+        </member>
+        <member name="P:EasyStorage.PlayerSaveDevice.Player">
+            <summary>
+            Gets the PlayerIndex of the player for which the data will be saved.
+            </summary>
+        </member>
+        <member name="T:EasyStorage.FileAction">
+            <summary>
+            A method for loading or saving a file.
+            </summary>
+            <param name="stream">A Stream to use for accessing the file data.</param>
+        </member>
+        <member name="T:EasyStorage.Strings">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.Strings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.Strings.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.Strings.forceCanceledReselectionMessage">
+            <summary>
+              Looks up a localized string similar to No storage device was selected. A storage device is required to continue..
+            </summary>
+        </member>
+        <member name="P:EasyStorage.Strings.forceDisconnectedReselectionMessage">
+            <summary>
+              Looks up a localized string similar to The storage device was disconnected. A storage device is required to continue..
+            </summary>
+        </member>
+        <member name="P:EasyStorage.Strings.NeedGamerService">
+            <summary>
+              Looks up a localized string similar to SaveDevice requries gamer services to operate. Add the GamerServicesComponent to your game..
+            </summary>
+        </member>
+        <member name="P:EasyStorage.Strings.No_Continue_without_device">
+            <summary>
+              Looks up a localized string similar to No. Continue without device..
+            </summary>
+        </member>
+        <member name="P:EasyStorage.Strings.Ok">
+            <summary>
+              Looks up a localized string similar to Ok.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.Strings.promptForCancelledMessage">
+            <summary>
+              Looks up a localized string similar to No storage device was selected. You can continue without a device, but you will not be able to save. Would you like to select a storage device?.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.Strings.promptForDisconnectedMessage">
+            <summary>
+              Looks up a localized string similar to The storage device was disconnected. You can continue without a device, but you will not be able to save. Would you like to select a storage device?.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.Strings.Reselect_Storage_Device">
+            <summary>
+              Looks up a localized string similar to Reselect Storage Device?.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.Strings.Storage_Device_Required">
+            <summary>
+              Looks up a localized string similar to Storage Device Required.
+            </summary>
+        </member>
+        <member name="P:EasyStorage.Strings.StorageDevice_is_not_valid">
+            <summary>
+              Looks up a localized string similar to StorageDevice is not valid..
+            </summary>
+        </member>
+        <member name="P:EasyStorage.Strings.Yes_Select_new_device">
+            <summary>
+              Looks up a localized string similar to Yes. Select new device..
+            </summary>
+        </member>
+    </members>
+</doc>

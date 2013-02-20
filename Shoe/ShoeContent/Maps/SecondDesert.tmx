@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="40" height="40" tilewidth="64" tileheight="64">
+ <properties>
+  <property name="Music" value="Los Desastres - Pension Adelaide"/>
+ </properties>
+ <tileset firstgid="1" name="Items" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/Items.png" width="128" height="260"/>
+ </tileset>
+ <tileset firstgid="9" name="TileSheetRevised" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/TileSheetRevised.png" width="640" height="640"/>
+ </tileset>
+ <layer name="Ground" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt11EKwDAIA1APUXqu3f80/R+M2TWaMPKR3/qoIjgjYiYySFE0vfnYpicf22JfnY/tsM8+xdhnn3322acZ++xjeJRuNoX7O2Ng+U5tFT6ECe1Dm1C+yhqnvupZQdvQxgrfJexD9vaLr3uH7rzL2O9/8XW77nV3/6vDljGwfQuCUX81
+  </data>
+ </layer>
+ <layer name="Detail" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzNWLFOAzEMzXqFjQFYkE/wDYxshTKhrvD//0EixcI1jmP7ErgnWc31fPG759hpk5IOyLZmO9frtdrSeY5iqfPgXOB4VsNLts9qXyQGxsTPJel8+b0yx1rHNxt4UU7AfLz6URROK7EILwn0XXt6Ley6BQ/Hc9/FFNPrS/lp+f5Pfj0NS25beZVwLZjlHgfqBemnbiSuHu1mApLcg5BfpN5nANKljqP06/XCFp6F74CMNX4tTSM8PAAypvweJsXzvs/o/Hrja2ud1/Fe6hfBa3hv/CD95jeyt2ytnWh+o3F7z0k1CWS8t/wW7Lk+CoCMZ/UXy3porfuWfo8OHtK+NALW+pgVv4e/7n+W3nXM9soMMYJfb130OL0rfjP1k3SxcKKQ+I3YT44Ch0NgnpH6WXOmgb/DVn5eTl4No/yQV1QnKyL8pLWlgZ7nWI3z02qC948Pweeg8PD8vy6A+un9b454UswLqXfi/hZde15+ln5FfcDJT6pRXofRXEjw6GephRa31r6n6XmVZH632e6y3bN5pVqwcLOAxqQAgZ8Ei3Yz9m/U75Ttjd2z7gfamat3/+b+QManZP9dgTURzamVt+dsWkLJKaTLc8U1XZ7h0e9A8Afmz6+/Acm2OgQ=
+  </data>
+ </layer>
+ <layer name="Overlay" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1bEJACAQA8BfQF3E/efT0s4y8NxB6qRLFQBJOz0AAB7pX0r3AwD8jJt5s5p3QgcH6nAA2Q==
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="40" height="40">
+  <object name="RiverAreaPortal" type="Portal" x="310" y="2251" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\RiverArea"/>
+    <property name="DestinationTileLocation" value="17,42"/>
+   </properties>
+  </object>
+  <object name="BanditCamp" type="Portal" x="956" y="4" width="641" height="65">
+   <properties>
+    <property name="DestinationMap" value="Maps\BanditCamp"/>
+    <property name="DestinationTileLocation" value="10,17"/>
+   </properties>
+  </object>
+  <object name="Spawn3" type="Spawn" x="549" y="839" width="163" height="148">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Spawn1" type="Spawn" x="892" y="1522" width="163" height="148">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Spawn2" type="Spawn" x="1849" y="1961" width="163" height="148">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Spawn4" type="Spawn" x="1823" y="490" width="163" height="148">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Spawn" type="Spawn" x="1808" y="1181" width="163" height="148">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="ForthCavePortal" type="Portal" x="2172" y="2248" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\ForthCave"/>
+    <property name="DestinationTileLocation" value="9,6"/>
+   </properties>
+  </object>
+  <object name="Chest5" type="Chest" x="1883" y="316" width="68" height="64">
+   <properties>
+    <property name="NumberOfItems" value="2"/>
+   </properties>
+  </object>
+  <object name="Chest1" type="Chest" x="1330" y="2409" width="68" height="64">
+   <properties>
+    <property name="NumberOfItems" value="2"/>
+   </properties>
+  </object>
+  <object name="Chest4" type="Chest" x="581" y="361" width="68" height="64">
+   <properties>
+    <property name="NumberOfItems" value="2"/>
+   </properties>
+  </object>
+  <object name="Chest" type="Chest" x="1361" y="1112" width="68" height="64">
+   <properties>
+    <property name="NumberOfItems" value="2"/>
+   </properties>
+  </object>
+  <object name="PlayerStart" type="PlayerStart" x="331" y="2054" width="61" height="56"/>
+ </objectgroup>
+ <layer name="Items" width="40" height="40" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAMCXARkAAAE=
+  </data>
+ </layer>
+ <layer name="Clip" width="40" height="40" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzlll0OwyAMg3ME7n/aaQ+VqooYOz+UaZZ4GITkWwHDMLNBNpv8ZoTyReciNpv0oXrPsVkelW82jmquaqCaCh9bZ/W9orGIT1Hm+6FxtBcUVfN5MRk+Zs+yZ2eV6xQhzzA7hzXilUreyDwvl3K+mP4qVXivWk+Nr1zfSg/t2n9V+kW+6nOcnR/5ftG6EY84eX2/+jc+b40i867+iD/vuK/V989u7fa/zLl/637zcijv2x3ymFZ8He/CaOtUlq2Dr4Kpw5+72g6uTN57H4pn2Sp0grdcQv/9TQYUk+Xr9gIv32oPqlyM/z9jvLzjMc6yZdcBMSp5dvn7vZ4ay3Kp3Owaz8Y71pOJy945FXcXah9NIBlR
+  </data>
+ </layer>
+ <layer name="AmmoClip" width="40" height="40" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1kEKgDAMBMA+If9/rYdeVJpgaJMsceciSNXNasExyCLVARaiMiHOmo0d+HTrq9s8p+z0gtYpWp4q7CEX+9axm76879azvvq7qX5+FoQ5ETIgYR9ET9ae+PN+QZj9SwaEnLtOz6DdT4w1q2vkdl6UNRHkdaQp8r84EkqOEy7H2QJh
+  </data>
+ </layer>
+</map>

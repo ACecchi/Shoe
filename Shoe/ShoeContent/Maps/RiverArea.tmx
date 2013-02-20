@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="45" tilewidth="64" tileheight="64">
+ <properties>
+  <property name="Music" value=""/>
+ </properties>
+ <tileset firstgid="1" name="Items" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/Items.png" width="128" height="260"/>
+ </tileset>
+ <tileset firstgid="9" name="TileSheetRevised" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/TileSheetRevised.png" width="640" height="640"/>
+ </tileset>
+ <layer name="Ground" width="25" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt1DEOABAMQNEegt7/qMxCUlRS/OFt1Z90oCKiVd6gRjTsjZ1OtEbbWnkLIB7P/+HXhmfn5Vt57geAW6WOU3tHHcssgDkFF9ReYw==
+  </data>
+ </layer>
+ <layer name="Detail" width="25" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzNl0FOxDAMRb3uHg0sEK7EOWDFAKsZlsD970EqGtVjfSdO6sBY+qraOn76bhSrZyI6J30kcdLcoCX/tK6XYvAsM1rjZmWQUdPDOCTdJt0VOC2Mt6TXDi+ZMYlaD0KSQYYXL4OcjMXLkTY/Oe9Y0HsjQ7NyXi30XioxJrUWMWQN69taDOlF51o1ehjeWr0MLuQ+dqjFh7U+itHaw0hZDNRvuZ9yjPCBQr6fOxiTuv8CivbBwId3f3oZ81r3PpChfc50GS/0ex629oYL+bpXaD5bDLQfUD6aB3u/sTcfzc5oRrSP2hnnOX9RDuLWakQwLO859vTzWhj6nNvL4AE+vHvRM19HM2pnse5PZB9afFwTw+rJEk+0zdvnQB9yjn/TFp/ieWag2e8RUz28/wgo+B8YrK4RoRkjIpqB/rURI5JpMUbU/wv9AGPn19I=
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="25" height="45">
+  <object name="SecondDesertPortal" type="Portal" x="1273" y="2642" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\SecondDesert"/>
+    <property name="DestinationTileLocation" value="2,35"/>
+   </properties>
+  </object>
+  <object name="FirstCavePortal" type="Portal" x="503" y="147" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\FirstCave"/>
+    <property name="DestinationTileLocation" value="19,11"/>
+   </properties>
+  </object>
+  <object name="SecondCavePortal" type="Portal" x="127" y="1156" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\SecondCave"/>
+    <property name="DestinationTileLocation" value="5,4"/>
+   </properties>
+  </object>
+  <object name="Chest2" type="Chest" x="310" y="2372" width="68" height="64">
+   <properties>
+    <property name="NumberOfItems" value="1"/>
+   </properties>
+  </object>
+  <object name="Bandit1" type="Bandit" x="605" y="1547" width="68" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Chest1" type="Chest" x="93" y="1809" width="68" height="64">
+   <properties>
+    <property name="NumberOfItems" value="1"/>
+   </properties>
+  </object>
+  <object name="Bandit3" type="Bandit" x="569" y="2604" width="68" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit4" type="Bandit" x="1410" y="349" width="68" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Chest4" type="Chest" x="1409" y="244" width="68" height="64">
+   <properties>
+    <property name="NumberOfItems" value="1"/>
+   </properties>
+  </object>
+  <object name="PlayerStart" type="PlayerStart" x="839" y="150" width="122" height="81"/>
+ </objectgroup>
+ <layer name="Overlay" width="25" height="45">
+  <data encoding="base64" compression="zlib">
+   eJzt18EJADAMA7Es0Hb/bestQoIE9/fXVb1Ouuk17wAAAIAtfO0ZPiM5AFU=
+  </data>
+ </layer>
+ <layer name="Items" width="25" height="45" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20LL6AAAAAAeBsRlAAB
+  </data>
+ </layer>
+ <layer name="Clip" width="25" height="45" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1GEKgDAIBWCP4P1P29+QrPdQ57b2QILc+ppEKiI6qLy89e5rIgaSjLOwBtpb2fCsyPeDrkXvHyOWGQx2hpn1Z8NmhIGm03jqf+1n3xsxovPvMrL3dBlV6TKY+bHzPEbeM5isYERmuZvhzTbDqMyuhpprhVGRLiPbrD5H5X/B1gXaryeB
+  </data>
+ </layer>
+ <layer name="AmmoClip" width="25" height="45" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt16ERAAAIA7GOwP7T4rF1XGJ+hk/+m1MAAACg47V7C08yAEE=
+  </data>
+ </layer>
+</map>

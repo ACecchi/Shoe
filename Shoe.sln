@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shoe", "Shoe\Shoe\Shoe.csproj", "{1275BC49-B1C8-498E-A31E-F23CCE60A643}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "ShoeContent", "Shoe\ShoeContent\ShoeContent.contentproj", "{2E66FD73-C6FC-4D61-997A-12014746616E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shoe.Lib", "Shoe.Lib\Shoe.Lib.csproj", "{BB6E1829-C4A4-48EA-A425-9665B7449481}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1275BC49-B1C8-498E-A31E-F23CCE60A643}.Debug|x86.ActiveCfg = Debug|x86
+		{1275BC49-B1C8-498E-A31E-F23CCE60A643}.Debug|x86.Build.0 = Debug|x86
+		{1275BC49-B1C8-498E-A31E-F23CCE60A643}.Release|x86.ActiveCfg = Release|x86
+		{1275BC49-B1C8-498E-A31E-F23CCE60A643}.Release|x86.Build.0 = Release|x86
+		{2E66FD73-C6FC-4D61-997A-12014746616E}.Debug|x86.ActiveCfg = Debug|x86
+		{2E66FD73-C6FC-4D61-997A-12014746616E}.Release|x86.ActiveCfg = Release|x86
+		{BB6E1829-C4A4-48EA-A425-9665B7449481}.Debug|x86.ActiveCfg = Debug|x86
+		{BB6E1829-C4A4-48EA-A425-9665B7449481}.Debug|x86.Build.0 = Debug|x86
+		{BB6E1829-C4A4-48EA-A425-9665B7449481}.Release|x86.ActiveCfg = Release|x86
+		{BB6E1829-C4A4-48EA-A425-9665B7449481}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

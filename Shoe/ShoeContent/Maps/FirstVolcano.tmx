@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="50" tilewidth="64" tileheight="64">
+ <properties>
+  <property name="Music" value="Los Desastres - Pension Adelaide"/>
+ </properties>
+ <tileset firstgid="1" name="Items" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/Items.png" width="128" height="260"/>
+ </tileset>
+ <tileset firstgid="9" name="TileSheetRevised" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/TileSheetRevised.png" width="640" height="640"/>
+ </tileset>
+ <layer name="Ground" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt2MERwyAMBECacAP05P5bydfDSAIdJwSOH3pk7MCtRUJCLaXU4LqFipzvMgodRzJY8yCFOLxzvNXBNqxwrDC0DsZ9Wv5Ig5WvKveMOCTDyn5oeRm9yHLMjpu5riIN0Z5VhshefI53OLRsmgGpSAczJ9vD2t+yLTv3wmP5JwcyjycPy4FmRPqX4ei9F+1flAPNu5uDtZePZEPcOzuer72OmTMfb270ufdq9uzKm4Xh6K2fDAfy7K0cb3FYnkgHYrk6481YZjIgPWlLyhjpmF03nyPnv5R3Di1jfVxnf9YzHNY9UQ5kDmtdjY7NtqGO1sJ0MPtkleVgWlDrzJjtd9UqC7uk79wTLdrecZrF2gNvo7Jz9yzS9RMdo2dx2ZnRnpzoONnj+c17l30t2tnoaQ7JMOLIzj3q6FV27rZ+ThCSjQ==
+  </data>
+ </layer>
+ <layer name="Detail" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztWklOxDAQ9Jk7R0SQ+AKfAE4scwJm/v8KsIihVOp2L4kzRKKk1qDEdqrs7vZGKf+wcK88P3zZaUMeS/GiPD9symIZ6li8C8+fij0Wte4D2eOa5BxoHFDDxfzr1VDrvpK9lW31aL7k0dDqI/9a7/hlz2VbPbcd8+Cj/HKudoDnrGeklqU6KlAL80U9o7RosV1K3B+YL9dF/1sTPQ2IaM7lsWn5C3PBmtDiu6LFarVTou02NpJl2uuhp2Mv857kUxP8jf7gMU8MXSV5tm9cz4bf9cRFBKPmCPSZpmMLaHkV+1V6f6fUwf7eUkeFpAVzrjf2OH41HZPRzoXxvgfkyusvjw4ci2n+3Xo8KpArr79Yh5Q3pPiVdOD88Nzhg+WssoiIDu+3mw5tLorMI1xW872sjtpe43/qlJPQWyfiWvGy9DUjNB2NYynrz/eWjkvi5AHqwDVKlqMGLzfLr7z1RoD30r25vc3T02y9spNQ7yFP8wfS3l/jbeWlm9nOAa8PVFj+MxV73uS+OPaLu7FEx1S++59/I22shSU6kPuedUTqNtTYxj3CWmt4iYs2/zKH7P5kxFou2qcWBymOObftQYfm/6P3bFkd0XM5fD9CRztH8uKv6qiIjMkafpWFlduk8zBtjCwd2llQy21L9sGZc1/N3zQdUX7ZdVhWi7YWyux3NYtixHn8Vme0fHY9+p5kFCQ/l2JxD9rwrkFDZh2q7cFG9gveAzVgzojowLtbvn/le9hRmiQ9FREdfNZkWXasPXdSPL9GzvQ5R+E9LJ9BRfMWj7WXy5Jx4bayORfjjH2V0fPV7D3yGtD+z8G665T6+xw6PLmip4PnDt6bsk7OrUtyT89/ojosSDq57cjdptWWZZ9S/byz
+  </data>
+ </layer>
+ <layer name="Overlay" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmd0OgjAMRvcs3Ph3RdQr8f1fSxrTWGvLFgys37KT9IYs0rOxQeuQUho2jjF9c934foc5jkac/vydu/K4OfdZE1Zuet6s+fNcl/LeEmttSzy8MbUo9TjP8cyMqYn2oOeFngfKe5rjkn4dEDwe6Z0/5z0aYxA8rHy9NYvEkgfnq8/HaA6E5xFxzpewPNAcCIQ9XEL3iEWrHoe66axGeyCuBdE9YsEekb85SmAPdNhjSp96AxHE/cE1nozodZ7Gqk29uikypT2v7rEPXJvmeoLRPZicD/VLIp+9sh9FkI/nEnlNeH+MxrXusT8te8g9IvcKmod8x0snBA95rsrniq6xC4KHnG95jf3IJXItlfNAeAcSsmfO891q76p71KUVD+tbEWGvW7S0JnSG6TVB7QGhfS96aAfE/wgJzh29z4uce4u8AKBATUw=
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="50" height="50">
+  <object name="ThirdCavePortal" type="Portal" x="2943" y="772" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\ThirdCave"/>
+    <property name="DestinationTileLocation" value="2,2"/>
+   </properties>
+  </object>
+  <object name="Chest1" type="Chest" x="482" y="2974" width="68" height="64">
+   <properties>
+    <property name="NumberOfItems" value="3"/>
+   </properties>
+  </object>
+  <object name="Chest3" type="Chest" x="256" y="200" width="68" height="64">
+   <properties>
+    <property name="NumberOfItems" value="3"/>
+   </properties>
+  </object>
+  <object name="Chest4" type="Chest" x="464" y="186" width="68" height="64">
+   <properties>
+    <property name="NumberOfItems" value="3"/>
+   </properties>
+  </object>
+  <object name="Bandit3" type="Bandit" x="1430" y="1650" width="68" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit2" type="Bandit" x="592" y="2318" width="68" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit1" type="Bandit" x="1668" y="3008" width="68" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit5" type="Bandit" x="2130" y="2062" width="68" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit6" type="Bandit" x="2438" y="661" width="68" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit8" type="Bandit" x="1134" y="380" width="68" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit7" type="Bandit" x="1930" y="386" width="68" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit4" type="Bandit" x="2956" y="2084" width="68" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="PlayerStart" type="PlayerStart" x="2749" y="2735" width="61" height="56"/>
+ </objectgroup>
+ <layer name="Items" width="50" height="50" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt18EJwCAUREEFg/13HOxAMLA/MlPBOy1sa3DuSQdQXk8HwE/YUwC410wHFDbSARBiF+7l2wGLnQcAvuZrAOx5AfcVAC8=
+  </data>
+ </layer>
+ <layer name="Clip" width="50" height="50" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztlF0OgDAIg3cE739a381+oKUMp032YlzptwBXa+067MyE+KC1vEI4GP/TOFTZIjmY3rV4rP63+kZn8Nwfec2+j3wz5N0p3p2TKQ9L9C5R+FdlQGpkMVhqKfVzzH2yZ9R6d7XHlOcUjl4ulHs3xzMfwjH6bxcH0oeM3y4O1m/F33urbA6vKnFkKKoPsnM/FfWuCg5PnkoczLwxM4vOA+v3ZQ4kg5oD8UTuvYljdl/Joep1hAXNgDKMPKpxWGr9HPEcEVr5emufwtG7w8w54m/5HxXKgZ5V7UiW3RzRvW2pqfBUs0Qre+eo1MuM9OduMXPJ1op+FzUHu4vQOtYMlTisHkxNJYfXq9K8Z/WpUghDJRYmP8IZ+Q4Z2aueGxG+UAE=
+  </data>
+ </layer>
+ <layer name="AmmoClip" width="50" height="50" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt2FEKgCAQhGGP4HP3P2jsgyCylmbizLAfCNFL+0NUllNKefPyXD+vt+sVq3Pv9KUDUXRgqTuenLz3R/Q6cnPM1NGbF73B9DrYeB2MZp5XyKIDi2LHdXiWFfV3L7PowKLUoSA6sIzuo9CxdYz892EQHZhUOgqVDjP7fxeB976LjnOUO+rzKh2GtYNx/+TNrNbB1tJqv09YRQcWlQ6j2KHUwszbIzJSaDDMswdcN3EmFnc=
+  </data>
+ </layer>
+</map>

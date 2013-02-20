@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="21" tilewidth="64" tileheight="64">
+ <properties>
+  <property name="Music" value="Remote Locations in Ontario - Midnight Wanderer"/>
+ </properties>
+ <tileset firstgid="1" name="Items" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/Items.png" width="128" height="260"/>
+ </tileset>
+ <tileset firstgid="9" name="TileSheetRevised" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/TileSheetRevised.png" width="640" height="640"/>
+ </tileset>
+ <layer name="Ground" width="20" height="21">
+  <data encoding="base64" compression="zlib">
+   eJwTYWBgEBnFo3gUj+JRPIoHGAMA+PUg0Q==
+  </data>
+ </layer>
+ <layer name="Detail" width="20" height="21">
+  <data encoding="base64" compression="zlib">
+   eJzjYWBgkIdiHipgTiTzkNnkYE4s5lEDU+ImfO6jlnnU8t9Q8S+p/iekHps9+NxAqn8pNQ+bP4hRh66WHPfhU0tr88iNU1LTH7FlEK3Mo6TMGWr5F19dQEg/Nj0ArMwmEQ==
+  </data>
+ </layer>
+ <layer name="Overlay" width="20" height="21">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAoGHgAABpAAAQ==
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="20" height="21">
+  <object name="SecondDesertPortal" type="Portal" x="451" y="1281" width="495" height="61">
+   <properties>
+    <property name="DestinationMap" value="Maps\SecondDesert"/>
+    <property name="DestinationTileLocation" value="20,2"/>
+   </properties>
+  </object>
+  <object name="BossRoomPortal" type="Portal" x="77" y="26" width="107" height="107">
+   <properties>
+    <property name="DestinationMap" value="Maps\BossRoom"/>
+    <property name="DestinationTileLocation" value="3,47"/>
+   </properties>
+  </object>
+  <object name="Bandit5" type="Bandit" x="895" y="621" width="64" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit8" type="Bandit" x="887" y="796" width="64" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit7" type="Bandit" x="128" y="832" width="64" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit2" type="Bandit" x="315" y="408" width="64" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit3" type="Bandit" x="957" y="215" width="64" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit1" type="Bandit" x="201" y="217" width="64" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit6" type="Bandit" x="532" y="625" width="64" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit9" type="Bandit" x="1121" y="701" width="64" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit4" type="Bandit" x="763" y="419" width="64" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Bandit10" type="Bandit" x="1101" y="996" width="64" height="64">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="PLayerStart" type="PlayerStart" x="656" y="1051" width="96" height="103"/>
+ </objectgroup>
+ <layer name="Items" width="20" height="21" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFtASsA+2AQQbYB9oBZAJs7majuytGwUgG5OadoZTnAHQgACg=
+  </data>
+ </layer>
+ <layer name="Clip" width="20" height="21" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJwTYEAAASphZPMoAdjMo6b7KAW0Mo+a4T8U/IvOJ9V/hOIXn5sJydHCPEL5BJ9/iIlfUuKInuaRG6eE3EfIDfjU0cI8SsockFp5Et1Hitn0LK/I0Q8AFeEJsA==
+  </data>
+ </layer>
+ <layer name="AmmoClip" width="20" height="21" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAoGHgAABpAAAQ==
+  </data>
+ </layer>
+</map>

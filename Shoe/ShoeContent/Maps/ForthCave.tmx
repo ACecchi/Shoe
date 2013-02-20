@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="14" height="15" tilewidth="64" tileheight="64">
+ <properties>
+  <property name="Music" value=""/>
+ </properties>
+ <tileset firstgid="1" name="Items" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/Items.png" width="128" height="260"/>
+ </tileset>
+ <tileset firstgid="9" name="TileSheetRevised" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/TileSheetRevised.png" width="640" height="640"/>
+ </tileset>
+ <layer name="Ground" width="14" height="15">
+  <data encoding="base64" compression="zlib">
+   eJwTZWBgEB3Fo3gUU4QBaogROw==
+  </data>
+ </layer>
+ <layer name="Detail" width="14" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxTYmBgUKIQEwvI0YOsT5QE83HZhUuNOBBLALEkFn343GyKRx2xfqWnPmzhQq4+Bix8YvURArTUR2l6x4YBpnAMZQ==
+  </data>
+ </layer>
+ <layer name="Overlay" width="14" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxTYmBgUKIQqwOxBgGsiUWPKQMm0AJiGyRsi0UPuhpkdbxAzAfE/Ej6DKF6kM1Cx8gAWZ8xAX/CgDEefYZY/EmJPnS/EKsPWQ2l+kwYEHFKij4GqF5Q2GGLf3z6kAG+NADD1kSooRYGAEvIGnI=
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="14" height="15">
+  <object name="SecondDesertPortal" type="Portal" x="696" y="272" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\SecondDesert"/>
+    <property name="DestinationTileLocation" value="30,36"/>
+   </properties>
+  </object>
+  <object name="PlayerStart" type="PlayerStart" x="385" y="134" width="61" height="56"/>
+ </objectgroup>
+ <layer name="Items" width="14" height="15" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUUAoAA0gAAQ==
+  </data>
+ </layer>
+ <layer name="Clip" width="14" height="15" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJwTYGBgEKAQEwvI0YOsjxTzcdlFihpy7R/M+rD5mVx9DFj4xOojBGipj9L0jg0DACFPBZE=
+  </data>
+ </layer>
+ <layer name="AmmoClip" width="14" height="15" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJwTYGBgEKAQEwvI0YOsjxTzcdlFihpy7R/M+rD5mVx9DFj4xOojBGipj9L0jg0DACFPBZE=
+  </data>
+ </layer>
+</map>

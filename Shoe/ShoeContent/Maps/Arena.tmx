@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="25" height="25" tilewidth="64" tileheight="64">
+ <properties>
+  <property name="Music" value=""/>
+ </properties>
+ <tileset firstgid="1" name="Items" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/Items.png" width="128" height="260"/>
+ </tileset>
+ <tileset firstgid="9" name="TileSheetRevised" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/TileSheetRevised.png" width="640" height="640"/>
+ </tileset>
+ <layer name="Ground" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJwTYWBgEBnFo3gUj+JRPIpHIBajg/m0tEOMxnaIDUE70M3DhqlpHi411HAnIQwAN3UxPw==
+  </data>
+ </layer>
+ <layer name="Detail" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJzFVkEKwzAM8yt6rQb9ygY77f+/2QI1eJ5d24lhApEmTaTKIW1BRDdBOH1vfGZOF2B4c9sJ1sw8/5GgBda29LMaGXAOjX1B0/JAg8eYfzjrQD05dtVKdNXqygNUqxXXRLMzR5TvXx5wPLxzNpsDwboKKnu+4qF9vP3Q6yq102NIelTuybH7hw+KazXrMfSf5/VqDqt+Un8AiXUVaP0BnWP1vf5S/Y1+z0jFg/dUUmbYToK+v7ueR6Snn13y6r9B6np6nm7kwa1V2xm+AdG/H40=
+  </data>
+ </layer>
+ <layer name="Overlay" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAHgzCcQAAQ==
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="25" height="25">
+  <object name="PlayerStart" type="PlayerStart" x="385" y="134" width="61" height="56"/>
+  <object name="Spawn11" type="Spawn" x="1364" y="727" width="102" height="86">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Spawn10" type="Spawn" x="1215" y="1003" width="102" height="86">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Spawn1" type="Spawn" x="1357" y="455" width="102" height="86">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Spawn2" type="Spawn" x="1073" y="127" width="102" height="86">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Spawn9" type="Spawn" x="825" y="1269" width="102" height="86">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Spawn8" type="Spawn" x="209" y="1231" width="102" height="86">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Spawn7" type="Spawn" x="149" y="947" width="102" height="86">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Spawn6" type="Spawn" x="139" y="677" width="102" height="86">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Spawn5" type="Spawn" x="143" y="413" width="102" height="86">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Spawn4" type="Spawn" x="389" y="217" width="102" height="86">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+  <object name="Spawn3" type="Spawn" x="731" y="131" width="102" height="86">
+   <properties>
+    <property name="Type" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Items" width="25" height="25" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAHgzCcQAAQ==
+  </data>
+ </layer>
+ <layer name="Clip" width="25" height="25" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJwTYGBgEKAzphaghx3Y7KEFoLX56PaM2jFqx6gdo3aM2kF7O+hZd9DCjoGoYym1i9ptE3q3kUjBANCvCRE=
+  </data>
+ </layer>
+ <layer name="AmmoClip" width="25" height="25" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJwTYGBgECADkwLI0UeuHaTqobZ6aoQVIfOwqSHXDmLdOGoHcXZQGuf0sAMbnxZ2EKN+qNlBizKRVuXuKBgFo2D4AwCBvgWR
+  </data>
+ </layer>
+</map>

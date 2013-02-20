@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="64" tileheight="64">
+ <properties>
+  <property name="Music" value="Main Title_Peter Boss - Horse Race"/>
+ </properties>
+ <tileset firstgid="1" name="Items" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/Items.png" width="128" height="260"/>
+ </tileset>
+ <tileset firstgid="9" name="TileSheetRevised" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/TileSheetRevised.png" width="640" height="640"/>
+ </tileset>
+ <layer name="Ground" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJwTYWBgEBnFo3gUj+JRPIpJxADybx9B
+  </data>
+ </layer>
+ <layer name="Detail" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJylVEEKwzAM87XnHdodVlL6h/7/aSusAmEUxWEC0+I4imUnjvjheKyRHcncGiwoFl+HKi/WgdeANwwv+xwWk6/TD6y3bbe9k39PfKoGzeQwgtI50prB9c21Yy7WMpuf4nO4hA/1AYfiq9wVhWp+1Roovmp/T/qHntn6jcB8Kq/PJJd6F5VeqBieLf/oRa/cu1Xac485Jt/lPAt75yj05pR6Mz3e3v4Wes4ovzpPxXwBhfIVSg==
+  </data>
+ </layer>
+ <layer name="Overlay" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFMMALxHxAzD/QDhkmQGegHTAKRsEooCkAAItXAFc=
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="20" height="20">
+  <object name="PlayerStart" type="PlayerStart" x="1029" y="843" width="61" height="56"/>
+  <object name="FirstCavePorta" type="Portal" x="443" y="836" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\FirstCave"/>
+    <property name="DestinationTileLocation" value="5,23"/>
+   </properties>
+  </object>
+  <object name="FirstCavePortal1" type="Portal" x="508" y="272" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\FirstCave"/>
+    <property name="DestinationTileLocation" value="8,6"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Items" width="20" height="20" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AU0BIwD7QDaAAYB9oBo2BQAAAQ3AAF
+  </data>
+ </layer>
+ <layer name="Clip" width="20" height="20" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJy9lEsKACAIRD2L9z9ki3ZiM+OHBIkknxqq2RVf0oyFpMM341yVnfmgGBWeh/MVg/1lVdRaGQPxsneT/Ko5RVvsPeanxlN7uMvr1J7N2YZM+kVlqXP7sk1zU3YU2wvxvrULEau6d37pAWtoFx0=
+  </data>
+ </layer>
+ <layer name="AmmoClip" width="20" height="20" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFtAJKaPQoGAWjYBQMJwAAUc8ARQ==
+  </data>
+ </layer>
+</map>

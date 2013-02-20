@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="50" tilewidth="64" tileheight="64">
+ <tileset firstgid="1" name="Items" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/Items.png" width="128" height="260"/>
+ </tileset>
+ <tileset firstgid="9" name="TileSheetRevised" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/TileSheetRevised.png" width="640" height="640"/>
+ </tileset>
+ <layer name="Ground" width="30" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztzbEJAAAIBLFfwv1XdQULC8EErr5KUotNbT59fX19fX19fS99AQAA+KkBSYYg0Q==
+  </data>
+ </layer>
+ <layer name="Detail" width="30" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+  </data>
+ </layer>
+ <layer name="Overlay" width="30" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="30" height="50">
+  <object name="PlayerStart" type="PlayerStart" x="1029" y="843" width="61" height="56"/>
+  <object name="FirstCavePorta" type="Portal" x="443" y="836" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\FirstCave"/>
+    <property name="DestinationTileLocation" value="5,23"/>
+   </properties>
+  </object>
+  <object name="FirstCavePorta" type="Portal" x="508" y="272" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\FirstCave"/>
+    <property name="DestinationTileLocation" value="8,6"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="Items" width="30" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+  </data>
+ </layer>
+ <layer name="Clip" width="30" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+  </data>
+ </layer>
+ <layer name="AmmoClip" width="30" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20IX6AAAAAAAIDXABdwAAE=
+  </data>
+ </layer>
+</map>

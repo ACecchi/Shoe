@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="30" tilewidth="64" tileheight="64">
+ <properties>
+  <property name="Music" value=""/>
+ </properties>
+ <tileset firstgid="1" name="Items" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/Items.png" width="128" height="260"/>
+ </tileset>
+ <tileset firstgid="9" name="TileSheetRevised" tilewidth="64" tileheight="64">
+  <image source="Tilesheets/TileSheetRevised.png" width="640" height="640"/>
+ </tileset>
+ <layer name="Ground" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztwwENAAAMw6CamH+rF3JIWDVVVVXfPdrBSdU=
+  </data>
+ </layer>
+ <layer name="Detail" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt1EsKACAIBFBvUW29/yEL2kWRlZqFA7MqeEIfBAC8VO24q3M+I7dNKI2labKPOh/V7YXbpcbdmt5dWHV312Y5eSvu8rqS/xVnNQzLrtYc7tLc01l/cjlizZWe5VdX6p2+2gxoqjh7
+  </data>
+ </layer>
+ <layer name="Overlay" width="30" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzNlkEOwjAMBPMB6B96AcoJASfg/98iByytjO3YjUlZaS9R23HjrZu5lDJv5EP1cZBPwL2UcboK3KX6GfA5iYtr6F31vnpi67hPVs1Yn8Xl/UZhj5Cr1Wxdx7mtfkvX0RqXh3v7vM99MNcriytlIcKlnEiZlbi0VyjKB+4fch/lO4MvoyZvDiRZ+dOymMm1tCU32oMsrmWpJsyhNMOo5rWKzibuTP0Ll75p/u/NVitrnkyN5HrmyK+42lnL05sernZfz1zt4fJsarb+3Ra3NYN6FM1V1jk38h2t4Wpny8hs1vbeMj2/Z0Z6MjxiBmfpDRGmQ6M=
+  </data>
+ </layer>
+ <objectgroup name="Objects" width="30" height="30">
+  <object name="RiverPortal" type="Portal" x="1339" y="611" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\RiverArea"/>
+    <property name="DestinationTileLocation" value="5,3"/>
+   </properties>
+  </object>
+  <object name="FirstAreaPortal" type="Portal" x="636" y="348" width="68" height="64">
+   <properties>
+    <property name="DestinationMap" value="Maps\FirstArea"/>
+    <property name="DestinationTileLocation" value="6,5"/>
+   </properties>
+  </object>
+  <object name="PlayerStart" type="PlayerStart" x="550" y="489" width="61" height="56"/>
+ </objectgroup>
+ <layer name="Items" width="30" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztzqENAEAIwEAMYf+N37xFA8mdqmwEAJfV9AAAfNk0ez1Y1AAS
+  </data>
+ </layer>
+ <layer name="Clip" width="30" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1FEOACAEBmAXcv/r9d7U/oRkbJ6wz9bERMSPMjrajXmflSv1zbVVH7If6kph7aLR7tnsbl5bQ13NrbRr63r+V5YZYWR2o/ZoF3Nvd63kWkQ213uXqq7Xnf6aA2N/Slw=
+  </data>
+ </layer>
+ <layer name="AmmoClip" width="30" height="30" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt1NEJACAIBFAXcv/1msC6TM3iBL/C3kGYiohe6uqiW/M+lovOWvet8nVy0aK7Nzub956hrmdX6Ma6mf9VZFcYnd2qHHQx9zTrT25EdXOzs/zqZu3pqz0AUqNKAg==
+  </data>
+ </layer>
+</map>
